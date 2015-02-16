@@ -17,9 +17,9 @@ Key Features
 
 Prerequisite
 ------------  
--PHP,MySql
--Stripe Account
--Twilio Phone number
+-PHP,MySql  
+-Stripe Account  
+-Twilio Phone number  
 
 ...............................................
 
