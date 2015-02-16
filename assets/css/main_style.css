@@ -1,0 +1,17 @@
+.required{
+    color: red;
+}
+.behave{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid thin #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.behave p{ padding: 10px;}
+.selected_tab{
+    border: solid thick green;
+}

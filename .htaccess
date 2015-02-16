@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.php [L]
+</IfModule>
+ErrorDocument 400 /errors/404.php
+ErrorDocument 403 /errors/404.php
+ErrorDocument 404 /errors/404.php
+ErrorDocument 405 /errors/404.php
+ErrorDocument 408 /errors/404.php
+ErrorDocument 500 /errors/404.php
+ErrorDocument 502 /errors/404.php
+ErrorDocument 504 /errors/404.php
