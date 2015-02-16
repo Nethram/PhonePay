@@ -38,17 +38,17 @@ Phone Pay can be configured in four different modes called system behavior. Syst
 
     1-Fixed Payment with Order ID  
 
-    Admin fixes an amount for all payments. User will be asked to enter Order ID and then lead to pay the fixed amount. Also admin can create order with order ID and payable amount. User entering an existing order ID will be lead to pay corresponding amount.  
+    Admin fixes an amount for all payments.  User will be asked to enter Order ID and then lead to pay the fixed amount.  Also admin can create order with order ID and payable amount.  User entering an existing order ID will be lead to pay corresponding amount.    
     
-	2-Fixed Payment without Order ID  
+   2-Fixed Payment without Order ID   
 
     User will be directly lead to pay a fixed amount that has set by admin. No Order ID will be asked.  
     
-	3-User defined Payment with Order ID  
+   3-User defined Payment with Order ID  
   
-    User will be asked to enter the amount they wish to pay after entering Order ID. Also admin can create order with order ID and payable amount. User entering an existing order ID will be lead to pay corresponding amount.
+    User will be asked to enter the amount they wish to pay after entering Order ID.  Also admin can create order with order ID and payable amount.  User entering an existing order ID will be lead to pay corresponding amount.
     
-	4-User defined Payment without Order ID  
+   4-User defined Payment without Order ID  
 
     User will be lead to pay the amount they wish to pay.  
   
