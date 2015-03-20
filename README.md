@@ -8,6 +8,7 @@ Key Features
 
 -Detailed call and transaction log.  
 -One click refund. 
+-One click overage charging.  
 -Configurable system behaviour.  
 -Simple installation.  
 -Easy to use Admin Panel.    
