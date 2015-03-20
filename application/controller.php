@@ -92,10 +92,11 @@ class Controller{
         }
         $methods=get_class_methods($this->controller); 
         if(isset($this->parameters[0])){
-        if(in_array($this->parameters[0], $methods)){
-            $this->method=$this->parameters[0];
-            $this->parameters= array_slice($this->parameters,1);
-        }      }
+            if(in_array($this->parameters[0], $methods)){
+                $this->method=$this->parameters[0];
+                $this->parameters= array_slice($this->parameters,1);
+                }
+        }
     }
 //set method parameter and url parametrs
     function setParameters(){
@@ -105,6 +106,7 @@ class Controller{
     }
 //start site
     function startSite(){
+        ob_start();
         $this->setBaseUrl();
         $this->loadBaseController();
         $this->setParameters();
@@ -129,15 +131,15 @@ foreach($objects as $name => $object){
     private function load($file,$dir,$data=''){
       $file=$file.'.php';
       $selected='';
-   $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
-foreach($objects as $name => $object){
-    if (strpos($name,$file) !== false) {
-        $selected=$name;
-        }   }
-    if(!empty($selected)){        include $selected;}
- else {
-    $this->loadError(); }
-}
+      $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), RecursiveIteratorIterator::SELF_FIRST);
+        foreach($objects as $name => $object){
+            if (strpos($name,$file) !== false) {
+                $selected=$name;
+                }   }
+            if(!empty($selected)){        include $selected;}
+         else {
+            $this->loadError(); }
+    }
 
 //load error
 function loadError(){
@@ -148,21 +150,24 @@ function loadError(){
 //load view
     function loadView($file,$data=''){
         $dir=  Config::$dir_views;
-        $this->load($file, $dir,$data);
+        $file=$dir."/".$file.".php";
+        if(is_file($file)){
+          require_once $file;  
+        }  else {
+           $this->loadError();
+        }
+        //$this->load($file, $dir,$data);
     }
  
  //loading model
  function loadModel($file){
      $dir=  Config::$dir_models;
      $this->load($file,$dir);
-     $obj=$file;
-     $$obj=new $file;
  }
 //loading helper
  function loadHelper($file){
      $dir=  Config::$dir_helper;
      $this->load($file,$dir);
-     $file=new $file;
  }
 //this sets url parameter limit, if limit exeeds, loads error
 function urlLimit($count){

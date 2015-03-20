@@ -36,10 +36,11 @@ CREATE TABLE IF NOT EXISTS `transactions` (
   `id` int(11) NOT NULL,
   `ord_id` int(11) NOT NULL,
   `timestamp` varchar(20) COLLATE utf8_bin NOT NULL,
-  `status` enum('initiated','completed','cancelled','failed','refunded','updated') COLLATE utf8_bin NOT NULL,
+  `status` enum('initiated','completed','cancelled','failed','refunded','updated','charged_overage') COLLATE utf8_bin NOT NULL,
   `stripid` varchar(200) COLLATE utf8_bin NOT NULL,
+  `strip_customer` varchar(250) COLLATE utf8_bin DEFAULT NULL,
   `notes` varchar(800) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 [query]
 
@@ -83,4 +84,4 @@ ALTER TABLE `transactions`
 
 [query]
   
-INSERT INTO `pahonepay`.`behavior` (`id`, `type`, `order_id`, `amount`) VALUES (NULL, 'user_defined', 'disabled', '');
+INSERT INTO `behavior` (`id`, `type`, `order_id`, `amount`) VALUES (NULL, 'user_defined', 'disabled', '');

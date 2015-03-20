@@ -11,7 +11,7 @@ class Behave3 extends Controller{
 
         $data['ivr_ask_orderid']=$this->ivr_message->ask_orderid;
 		$data['redirect']=Config::$base_url."/behave3/get_orderid.php";
-		$this->loadView('twiml_ask_orderid',$data);        
+		$this->loadView('twiml/twiml_ask_orderid',$data);        
 
     }
 
@@ -21,7 +21,7 @@ class Behave3 extends Controller{
 		$data['ivr_say_orderid']=$this->ivr_message->say_orderid;
 		$data['ivr_orderid_confirm']=$this->ivr_message->orderid_confirm;
 		$data['redirect'] = Config::$base_url."/behave3/confirm_orderid/$orderid.php";
-		$this->loadView('twiml_confirm_orderid',$data);
+		$this->loadView('twiml/twiml_confirm_orderid',$data);
 		
 	}
 	
@@ -52,7 +52,7 @@ class Behave3 extends Controller{
 					$data['redirect']=  Config::$base_url."/twiml/confirm_payment/".$txnid.".php";
 			        	$data['ivr_amount']=  $this->ivr_message->amount;
 			        	$data['amount_confirmation']= $this->ivr_message->amount_confirmation;
-			        	$this->loadView('twiml_amount_confirm',$data);
+			        	$this->loadView('twiml/twiml_amount_confirm',$data);
 				}
 			}else{
 				$go=Config::$base_url."/behave3/ask_amount/$order_id.php";
@@ -72,7 +72,7 @@ class Behave3 extends Controller{
 		$order_id=$params[0];
 		$data['ivr_ask_amount']=$this->ivr_message->ask_amount;
 		$data['redirect']=Config::$base_url."/behave3/get_amount/$order_id.php";
-		$this->loadView('twiml_ask_amount',$data);	
+		$this->loadView('twiml/twiml_ask_amount',$data);	
 	}
 	
 	
@@ -80,11 +80,12 @@ class Behave3 extends Controller{
 		$params=$this->urlPara();
 		$order_id=$params[0];
 		$amount=$_REQUEST['Digits'];
+		$amount=str_replace("*", ".", $amount);
 		$data['confirm']=implode(' ',str_split($amount));
 		$data['ivr_say_amount']=$this->ivr_message->say_amount;
 		$data['ivr_amount_confirm']=$this->ivr_message->amount_confirm;
 		$data['redirect'] = Config::$base_url."/behave3/confirm_amount/$order_id/$amount.php";
-		$this->loadView('twiml_confirm_amount',$data);
+		$this->loadView('twiml/twiml_confirm_amount',$data);
 	}
 	
 	function confirm_amount(){
@@ -107,7 +108,7 @@ class Behave3 extends Controller{
 				$data['amount']=$amount;
 		        $data['ivr_amount']=  $this->ivr_message->amount;
 		        $data['amount_confirmation']= $this->ivr_message->amount_confirmation;
-		        $this->loadView('twiml_amount_confirm',$data);
+		        $this->loadView('twiml/twiml_amount_confirm',$data);
 			
 		}else{
 			$go=Config::$base_url."/behave3/ask_amount/$order_id.php";

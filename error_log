@@ -1,0 +1,155 @@
+[19-Feb-2015 05:35:24 America/Chicago] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/baijupau/public_html/sandbox/phonepay/application/dbmodel.php on line 29
+[19-Feb-2015 05:40:36 America/Chicago] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/baijupau/public_html/sandbox/phonepay/application/dbmodel.php on line 29
+[19-Feb-2015 06:28:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Invalid integer: 312.3' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:147
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(143): Stripe_ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Charge', Array, NULL)
+#4 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(57): Stripe_Charge::create(Array)
+#5 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(115): Paynow->index('')
+#6 /home4/baijupau/public_html/sandbox/phonepay/applic in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 147
+[20-Feb-2015 04:04:58 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_AuthenticationError' with message 'Invalid API Key provided: *******1213' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:151
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 401, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 401)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(30): Stripe_ApiRequestor->request('get', '/v1/charges/ch_...', Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#4 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', 'ch_15XtWFK81iOn...', '21312321213')
+#5 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve('ch_15Xt in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 151
+[20-Feb-2015 04:06:06 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_AuthenticationError' with message 'Invalid API Key provided: *******1213' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:151
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 401, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 401)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(30): Stripe_ApiRequestor->request('get', '/v1/charges/ch_...', Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#4 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', 'ch_15XtWFK81iOn...', '21312321213')
+#5 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve('ch_15Xt in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 151
+[20-Feb-2015 04:06:33 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_AuthenticationError' with message 'Invalid API Key provided: 2131' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:151
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 401, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 401)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(30): Stripe_ApiRequestor->request('get', '/v1/charges/ch_...', Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#4 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', 'ch_15XtWFK81iOn...', '2131')
+#5 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve('ch_15XtWFK81iOn...',  in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 151
+[20-Feb-2015 04:09:43 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Received unknown parameter: amount' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:147
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(30): Stripe_ApiRequestor->request('get', '/v1/charges/ch_...', Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#4 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', Array, NULL)
+#5 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve(Array)
+#6 /home4/baijupau/public_ht in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 147
+[20-Feb-2015 04:21:19 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Charge instance has invalid ID: ' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php:94
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(24): Stripe_ApiResource->instanceUrl()
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', Array, NULL)
+#3 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve(Array)
+#4 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(115): Paynow->refund('')
+#5 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(181): Controller->startSite()
+#6 /home4/baijupau/public_html/sandbox/phonepay/index.php(23): include('/home4/baijupau...')
+#7 /home4/baijupa in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php on line 94
+[20-Feb-2015 04:22:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Charge instance has invalid ID: ' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php:94
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(24): Stripe_ApiResource->instanceUrl()
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', Array, NULL)
+#3 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve(Array)
+#4 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(115): Paynow->refund('')
+#5 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(181): Controller->startSite()
+#6 /home4/baijupau/public_html/sandbox/phonepay/index.php(23): include('/home4/baijupau...')
+#7 /home4/baijupa in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php on line 94
+[20-Feb-2015 04:25:07 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Charge instance has invalid ID: ' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php:94
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(24): Stripe_ApiResource->instanceUrl()
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(14): Stripe_ApiResource->refresh()
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Charge.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Charge', Array, NULL)
+#3 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(144): Stripe_Charge::retrieve(Array)
+#4 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(115): Paynow->refund('')
+#5 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(181): Controller->startSite()
+#6 /home4/baijupau/public_html/sandbox/phonepay/index.php(23): include('/home4/baijupau...')
+#7 /home4/baijupa in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php on line 94
+[20-Feb-2015 05:26:18 America/Chicago] PHP Warning:  Missing argument 2 for Transactions::refund(), called in /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php on line 155 and defined in /home4/baijupau/public_html/sandbox/phonepay/models/transactions.php on line 102
+[20-Feb-2015 05:58:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 121
+[20-Feb-2015 05:58:22 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 121
+[20-Feb-2015 05:58:31 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 121
+[20-Feb-2015 05:58:35 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 121
+[20-Feb-2015 06:19:14 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home4/baijupau/public_html/sandbox/phonepay/models/orders_model.php on line 133
+[20-Feb-2015 06:19:20 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home4/baijupau/public_html/sandbox/phonepay/models/orders_model.php on line 133
+[20-Feb-2015 06:19:37 America/Chicago] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home4/baijupau/public_html/sandbox/phonepay/models/orders_model.php on line 133
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:12 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 227
+[20-Mar-2015 00:17:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php:227) in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 233
+[20-Mar-2015 00:17:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php:227) in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 234
+[20-Mar-2015 00:17:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 239
+[20-Mar-2015 00:17:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:18 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:20 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:20 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:21 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:22 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:17:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:00 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:03 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:05 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:09 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:10 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 00:18:11 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/baijupau/public_html/sandbox/phonepay/views/pre_header.php:10) in /home4/baijupau/public_html/sandbox/phonepay/application/controller.php on line 145
+[20-Mar-2015 01:39:26 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Source hashes must include an 'object' key indicating what source to create.' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:147
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(143): Stripe_ApiRequestor->request('post', '/v1/customers', Array, Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(173): Stripe_Customer::create(Array)
+#5 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(117): Paynow->t in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 147
+[20-Mar-2015 04:10:43 America/Chicago] PHP Fatal error:  Uncaught exception 'Stripe_CardError' with message 'Your card number is incorrect.' in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php:153
+Stack trace:
+#0 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(268): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 402, Array)
+#1 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php(109): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 402)
+#2 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiResource.php(143): Stripe_ApiRequestor->request('post', '/v1/customers', Array, Array)
+#3 /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php(175): Stripe_Customer::create(Array)
+#5 /home4/baijupau/public_html/sandbox/phonepay/application/controller.php(117): Paynow->testpay('')
+#6 /home4/baijupau/public_html/sandbox/phonep in /home4/baijupau/public_html/sandbox/phonepay/lib/Stripe/ApiRequestor.php on line 153
+[20-Mar-2015 05:58:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/application/dbmodel.php on line 130
+[20-Mar-2015 05:58:50 America/Chicago] PHP Warning:  Wrong parameter count for mysqli_stmt::bind_result() in /home4/baijupau/public_html/sandbox/phonepay/application/dbmodel.php on line 133
+[20-Mar-2015 06:45:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 229
+[20-Mar-2015 06:45:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 241
+[20-Mar-2015 06:45:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 229
+[20-Mar-2015 06:45:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home4/baijupau/public_html/sandbox/phonepay/controllers/orders.php on line 241
+[20-Mar-2015 06:57:08 America/Chicago] PHP Warning:  Missing argument 5 for Transactions::update_transaction(), called in /home4/baijupau/public_html/sandbox/phonepay/controllers/paynow.php on line 85 and defined in /home4/baijupau/public_html/sandbox/phonepay/models/transactions.php on line 35
