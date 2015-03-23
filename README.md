@@ -58,7 +58,7 @@ Phone Pay works with Twilio and Stripe. You should have working phone number wit
 
 Who we are:
 -----------
-Callblaster is developed at Nethram.Nethram is a Silicon Valley based telecommunications and cloud innovator.
+Phone Pay is developed at Nethram.Nethram is a Silicon Valley based telecommunications and cloud innovator.
  Our mission is to provide the cloud telephony solutions that the big boys use at an affordable price by listening to
  your needs and providing you with what you actually want.
 
