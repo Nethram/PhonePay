@@ -1,7 +1,7 @@
 Phone Pay
 ===========
 Phone Pay is a software tool written in PHP which helps you to collect payments from your clients via phone calls. It is suitable for use in any online or offline stores selling products or services. 
-Phone Pay provides an interactive voice response system with the assigned Twilio phone number and the payment is made through Twilio Pay connected without Stripe.  
+Phone Pay provides an interactive voice response system with the assigned Twilio phone number and the payment is made through Twilio Pay connected with Stripe.  
 
 Key Features
 ------------  
