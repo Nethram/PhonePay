@@ -31,14 +31,13 @@ Befor starting installation you must connect your Stripe account to Twilio's Str
 	Navigate to the Twilio Voice Settings Console Page and Enable PCI Mode, opt-in to Twilio's Terms of Service and click SAVE. 
 2. connect your Stripe account to Twilio's Stripe Connect platform,
 	Navigate to <Pay> Connectors under Programmable Voice and click on the Stripe tile.
+
 		1. Click on Install.
 		2. Now set the Stripe Connector unique name to Default. You can create one <Pay> Connector per Twilio account with the name Default. 
-
-	Now we are ready for you to authorize Twilio to make charges and tokens on your behalf.
-
 		3. Click on "Connect with Stripe" which will redirect over to Stripe and ask you to enter your credentials. At the end, your Stripe account will be connected with the Twilio Stripe Connect Platform. If your Stripe account has not been activated to allow you to accept payments in live mode, then you can bypass entering your business details at this point and simply click the link at the top "Skip this account form". You will be redirected back to Twilio now.
 		4. Notice the Stripe account ID (acct_xxxxxx) is shown.
-	That's all for configuring <Pay> Connectors!
+
+	That's all for configuring <Pay> Connectors! 
 Now you can begin installation as below,
 
 	Copy all files in to your web directory and open it in your favourite web browser. Phone Pay's installer GUI will help you in completing installation.
