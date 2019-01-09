@@ -2,7 +2,7 @@
 header('Access-Control-Allow-Origin: *');  
 							 class Config{
 							     //defualt controller,which loads first.
-								 static $installed=true;
+								 static $installed=false;
 							     static $defualt_controller="admin";
 							     //directories
 							     static $dir_controllers="controllers";
@@ -14,11 +14,11 @@ header('Access-Control-Allow-Origin: *');
 								     static $url_tail=".php";
 								  	 //database credentials
      								 static $db_host="localhost";
-								     static $db_name="phone_pay";
-								     static $db_user="root";
-								     static $db_password="passw0rd";
+								     static $db_name="dbname";
+								     static $db_user="dbuser";
+								     static $db_password="1234";
 							 //stripe keys
-						     static $secret_key="sk_test_fDRbOjWsIw0zsGIufuGq4fNy";
-						     static $public_key="pk_test_oMAkdXHBAKVcSAg0gStz2MRd";
+						     static $secret_key="test_key";
+						     static $public_key="test_pkey";
 							 }
 							 ?>
