@@ -15,6 +15,8 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `order_id` varchar(250) COLLATE utf8_bin NOT NULL,
   `phone` varchar(20) COLLATE utf8_bin NOT NULL,
   `amount` int(11) NOT NULL,
+  `overage` int(11) NOT NULL,
+  `refunded` int(11) NOT NULL,
   `status` enum('unpaid','paid','cancelled','') COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
