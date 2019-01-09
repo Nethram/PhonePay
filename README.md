@@ -48,7 +48,7 @@ Now you can begin installation as below,
 
 How to use
 ----------  
- Users calling to your Twilio number will be answered by Phone Pay's interactive voice response system (IVR) and lead to pay through Stripe. User will be prompted to enter credit card details by IVR. Phone Pay does not store any credit card details on server. All call logs and payment details will be available in Admin Panel. Admin can manage orders and also if needed, refund the amount to the payer.
+ Users calling to your Twilio number will be answered by Phone Pay's interactive voice response system (IVR) and lead to pay through Twilio Pay connected with Strip. User will be prompted to enter credit card details by IVR. Phone Pay made as PCI compliant with the help of Twilio Pay. Hence credit card details will not be passed to the server. All call logs and payment details will be available in Admin Panel. Admin can manage orders and also if needed, refund the amount to the payer.
 
 Phone Pay can be configured in four different modes called system behavior. System behavior is switchable based on your needs at any time from admin panel.The four system behaviors are as follows.  
 
